@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.menu {
+  display: flex;
+}
+
+.menu-item {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu-indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background-color: #333;
+}
+
+.menu-item:hover .menu-indicator,
+.menu-item.active .menu-indicator {
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.menu-item:hover + .menu-item .menu-indicator,
+.menu-item.active + .menu-item .menu-indicator {
+  transform: translateX(100px);
+  transition: transform 0.3s ease-out;
+}
+
+.menu-item:hover + .menu-item + .menu-item .menu-indicator,
+.menu-item.active + .menu-item + .menu-item .menu-indicator {
+  transform: translateX(200px);
+  transition: transform 0.3s ease-out;
+}
