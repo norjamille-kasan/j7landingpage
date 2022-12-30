@@ -14,6 +14,7 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
                 inter: ['Inter', ...defaultTheme.fontFamily.sans],
+                russo: ['Russo One', ...defaultTheme.fontFamily.sans],
             },
         },
     },
