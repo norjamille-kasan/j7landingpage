@@ -11,7 +11,7 @@ let props = defineProps({
 </script>
 
 <template>
-
+  
   <div class="min-h-screen bg-gray-100 font-inter">
     <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
     <div class="relative z-40 md:hidden" role="dialog" aria-modal="true">
